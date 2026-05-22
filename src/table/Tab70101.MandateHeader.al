@@ -257,6 +257,10 @@ table 70101 "Mandate Header"
             Caption = 'E/L Reference No.';
             DataClassification = ToBeClassified;
         }
+        field(70146; "Comment"; Text[500])//tejasvi 22 may 2026
+        {
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {

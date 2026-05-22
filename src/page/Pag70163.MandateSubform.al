@@ -16,7 +16,8 @@ page 70163 "Mandate Subform"
                 field(Type; Rec.Type)
                 {
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    // Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Type field.';
 
                     trigger OnValidate()
@@ -27,7 +28,8 @@ page 70163 "Mandate Subform"
                 field("No."; rec."Item No.")
                 {
                     Caption = 'No';
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Item Name New field.';
 
@@ -41,8 +43,9 @@ page 70163 "Mandate Subform"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Item Name field.';
-                    Editable = false;
-
+                    //  Editable = false;
+                    // Status Open होगा तभी एडिट कर पाएंगे
+                    Editable = IsDescriptionEditable;
                     trigger OnValidate()
                     begin
                         Rec.TestField(Status, Rec.Status::Open);
@@ -51,28 +54,35 @@ page 70163 "Mandate Subform"
                 field("Description 2"; rec."Description 2")
                 {
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Description 2 field.';
                 }
                 field(Quantity; rec.Quantity)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the PR Qty field.';
-                    Editable = Rec.Invoiced = false;
+                    // Editable = Rec.Invoiced = false;
+                    // Updated editable condition below
+
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
+
                 }
 
                 field("Unit oF Measure Code"; rec."Unit oF Measure Code")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Price Unit field.';
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
 
                 }
                 field("Invoice Type"; Rec."Invoice Type")
                 {
                     ShowMandatory = true;
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    // Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Invoice Type field.';
 
                     trigger OnValidate()
@@ -98,7 +108,7 @@ page 70163 "Mandate Subform"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Unit cost field.';
-                    Editable = (Rec."Invoice Type" = Rec."Invoice Type"::Lumpsum) and EditableStatus and Rec.Invoiced = false;
+                    Editable = (Rec."Invoice Type" = Rec."Invoice Type"::Lumpsum) and EditableStatus and Rec.Invoiced = false and IsQuantityEditable;
                     ;
 
                     trigger OnValidate()
@@ -114,7 +124,8 @@ page 70163 "Mandate Subform"
                 {
                     Caption = 'Percentage(%)/amount';
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Advanced(%)/amount field.';
 
                     trigger OnValidate()
@@ -130,11 +141,12 @@ page 70163 "Mandate Subform"
                 }
                 field(Amount; Rec.Amount)
                 {
-                    Editable = false;
+                    // Editable = false;
                     Visible = true;
                     ApplicationArea = all;
                     ToolTip = 'Specifies the value of the Amount field.';
-
+                    // Status Open होगा तभी एडिट कर पाएंगे
+                    Editable = IsDescriptionEditable;
                     trigger OnValidate()
                     var
                         RecMH: Record "Mandate Header";
@@ -161,7 +173,7 @@ page 70163 "Mandate Subform"
                     ApplicationArea = All;
                     Editable = Rec.Invoiced = false;
                     ToolTip = 'Specifies the value of the PR Qty In field.';
-
+                    // Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     trigger OnValidate()
                     begin
                         Rec.TestField(Amount);
@@ -177,38 +189,44 @@ page 70163 "Mandate Subform"
                 field("Amount Assigned"; Rec."Amount Assigned")
                 {
                     ApplicationArea = All;
-                    Editable = Rec.Invoiced = false;
+                    // Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Item ID Based On  field.';
                 }
                 field("Remaining Amount"; Rec."Remaining Amount")
                 {
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Remaining Amount field.';
                 }
                 field("Short Close Qty."; Rec."Short Close Qty.")
                 {
                     ToolTip = 'Specifies the value of the Short Close Qty. field';
                     ApplicationArea = All;
-                    Editable = Rec."Short Closed" <> true and Rec.Invoiced = false;
+                    Editable = Rec."Short Closed" <> true and Rec.Invoiced = false and IsDescriptionEditable;
                     ;
                 }
                 field("Short Closed"; Rec."Short Closed")
                 {
                     ToolTip = 'Specifies the value of the Short Closed field';
                     ApplicationArea = All;
-                    Editable = false;
+                    // Editable = false;
+                    editable = IsDescriptionEditable;
                 }
                 field("Reason Code"; rec."Reason Code")
                 {
                     ApplicationArea = All;
-                    Editable = Rec.Invoiced = false;
+                    // Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
+
                     ToolTip = 'Specifies the value of the Reason Code field.';
                 }
                 field(Status; Rec.Status)
                 {
                     ApplicationArea = All;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Status field.';
                     // StyleExpr = StyleTxt;
                 }
@@ -216,25 +234,29 @@ page 70163 "Mandate Subform"
                 {
                     ToolTip = 'Specifies the value of the Invoiced field.';
                     ApplicationArea = All;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                 }
                 field("Location Code"; Rec."Location Code")
                 {
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    //Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Location Code field.';
                 }
                 field("Start Date"; Rec."Start Date")
                 {
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Start Date field.';
                 }
                 field("End Date"; Rec."End Date")
                 {
                     Caption = 'End Date';
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the End Date field.';
                 }
 
@@ -243,6 +265,7 @@ page 70163 "Mandate Subform"
                 {
                     ApplicationArea = All;
                     Editable = Rec.Invoiced = false;
+                    // Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Actual End Date field.';
                     trigger OnValidate()
                     begin
@@ -254,38 +277,45 @@ page 70163 "Mandate Subform"
                 field("Actual Man Days"; Rec."Actual Man Days")
                 {
                     ApplicationArea = all;
-                    Editable = Rec.Invoiced = false;
+                    //  Editable = Rec.Invoiced = false;
+                    Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the Actual Man Days field.';
                 }
                 field("Billing Type"; Rec."Billing Type")
                 {
                     ApplicationArea = All;
-                    Editable = false;
+                    // Editable = false; // Editable = IsQuantityEditable and (Rec.Invoiced = false);
+                    editable = IsDescriptionEditable;
                     ToolTip = 'Specifies the value of the Billing Type field.';
                 }
                 field("OPE Type"; Rec."OPE Type")
                 {
                     ApplicationArea = All;
-                    Editable = (Rec.Status = Rec.Status::Open) and Rec.Invoiced = false;
+                    Editable = (Rec.Status = Rec.Status::Open) and Rec.Invoiced = false and IsQuantityEditable;
                     ToolTip = 'Specifies the value of the OPE Type field.';
                 }
                 field("TAX Type"; Rec."TAX Type")
                 {
                     ApplicationArea = All;
-                    Editable = (Rec.Status = Rec.Status::Open) and Rec.Invoiced = false;
+                    Editable = (Rec.Status = Rec.Status::Open) and Rec.Invoiced = false and IsQuantityEditable;
                     ToolTip = 'Specifies the value of the TAX Type field.';
                 }
                 field("Not Due"; Rec."Not Due")
                 {
                     ApplicationArea = All;
                     Editable = Rec.Invoiced = false;
+                    //  Editable = IsQuantityEditable and (Rec.Invoiced = false);
+                    // Editable = Rec.Invoiced = false AND LineEditable;
+                    //  Editable = issubfromeditable and (Rec.Invoiced = false);
                     ToolTip = 'Specifies the value of the IDNB field.';
+
                 }
                 field("Due Date"; Rec."Due Date")
                 {
                     ApplicationArea = All;
-                    Editable = Rec."Not Due" = true and Rec.Invoiced = false;
+                    Editable = Rec."Not Due" = true and Rec.Invoiced = false and IsQuantityEditable;
                     ToolTip = 'Specifies the value of the Due Date field.';
+
                 }
             }
         }
@@ -390,6 +420,10 @@ page 70163 "Mandate Subform"
             }
         }
     }
+    var
+    // RecMHdr1: Record "Mandate Header";
+    // EditableStatus1: Boolean;
+    // LineEditable: Boolean;
 
     trigger OnDeleteRecord(): Boolean
     begin
@@ -399,6 +433,8 @@ page 70163 "Mandate Subform"
     trigger OnAfterGetCurrRecord()
     begin
 
+
+        //seteditability();
         rec."Remaining Amount" := abs(rec."Amount Assigned" - rec.Amount);
 
         RecMHdr.Reset();
@@ -412,6 +448,9 @@ page 70163 "Mandate Subform"
 
     trigger OnAfterGetRecord()
     begin
+        SetEditableVariables();//tejasvi
+
+
 
         rec."Remaining Amount" := abs(rec."Amount Assigned" - rec.Amount);
         RecMHdr.Reset();
@@ -444,10 +483,22 @@ page 70163 "Mandate Subform"
                 EditableStatus := true
             else
                 EditableStatus := false;
+
+
+        // NEW CODE tejasvi
+
+
+
+
     end;
 
     trigger OnNewRecord(BelowxRec: Boolean)
     begin
+
+        SetEditableVariables();
+
+
+
         Rec.Quantity := 1;
         if rec.Type = rec.Type::" " then
             rec.Type := rec.Type::"G/L Account";
@@ -702,4 +753,47 @@ page 70163 "Mandate Subform"
             end;
         end;
     end;
+
+    // trigger OnOpenPage()
+    // var
+    // begin
+    //     seteditability();
+    // end;
+
+
+    // local procedure seteditability()
+    // var
+    //     HeaderRec: record "Mandate Header";
+    // begin
+    //     clear(issubfromeditable);
+    //     issubfromeditable := true;
+    //     if HeaderRec.Get(Rec."Mandate Document No.") then
+    //         if HeaderRec.Status = HeaderRec.Status::Released then
+    //             issubfromeditable := false;
+    // end;
+
+    var
+        IsTypeEditable: Boolean; //tejasvi
+        EditableStatusnew: Boolean; // Existing variable from your code
+        IsQuantityEditable: Boolean; // New variable added
+        IsDescriptionEditable: Boolean; // New variable added
+
+    // local procedure SetFieldEditable()
+    // begin
+    //     // Agar Invoice ho chuka hai YA Status 'Released' hai, toh edit nahi hoga.
+    //     // (Note: Option/Enum value check karne ke liye apne actual Status field ka code use karein)
+    //     IsTypeEditable := (not Rec.Invoiced) and (Rec.Status <> Rec.Status::Released);
+    // end;
+
+    local procedure SetEditableVariables()
+    begin
+        // Evaluates row by row. If status is Released, it becomes false.
+        IsQuantityEditable := Rec.Status <> Rec.Status::Released;
+
+        // अगर Status Open है, तो ही Description एडिट होगा
+        IsDescriptionEditable := Rec.Status = Rec.Status::Open;
+
+    end;
+
+
 }

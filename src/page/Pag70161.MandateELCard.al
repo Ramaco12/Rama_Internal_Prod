@@ -14,6 +14,7 @@ page 70161 "Mandate E/L Card"
         {
             group(General)
             {
+                Editable = (Rec.Status = Rec.Status::Open) or (Rec.Status = Rec.Status::"Pending Approval");
                 field("Document Date"; rec."Document Date")
                 {
                     ApplicationArea = all;
@@ -127,6 +128,11 @@ page 70161 "Mandate E/L Card"
                     Editable = false;
                     StyleExpr = StyleTxt;
                     ToolTip = 'Specifies the value of the Status field.';
+                }
+
+                field(Comment; Rec.Comment)
+                {
+                    applicationArea = All;
                 }
                 field("Short Closed"; rec."Short Closed")
                 {
@@ -440,6 +446,11 @@ page 70161 "Mandate E/L Card"
                         var
                             SPAttachment: Record "SharePoint Attachment";
                         begin
+
+                            if rec.Status<>rec.Status::"Pending Approval" then
+                            Error('Please Send Approval Request first');//Tejswi22052026
+
+
                             SPAttachment.Reset();
                             SPAttachment.SetRange("Table ID", Database::"Mandate Header");
                             SPAttachment.SetRange("No.", Rec."No.");
@@ -477,9 +488,9 @@ page 70161 "Mandate E/L Card"
                             if QtyAss = 0 then begin
                                 Rec.Status := Rec.Status::Open;
                                 rec.Modify();
-                            end
-                            else
-                                Error('You can not open as all sales Invoice is not cancelled.');
+                            end;
+                            // else
+                            //     Error('You can not open as all sales Invoice is not cancelled.');//Tejswi22052026
 
                             if rec.Status <> Rec.Status::Cancelled then begin
                                 rec.Status := Rec.Status::Open;
@@ -579,12 +590,18 @@ page 70161 "Mandate E/L Card"
         if RecMHdr1.FindFirst() then
             if (RecMHdr1.Status = RecMHdr1.Status::Cancelled) then CurrPage.Editable(false);
 
-        ///Rk 240124        
-        if RecMHdr1.Status = RecMHdr1.Status::"Pending Approval" then
+        // ///Rk 240124  //commented and add below code tejswi22052026      
+        // if RecMHdr1.Status = RecMHdr1.Status::"Pending Approval" then
+        //     EditableStatus := false
+        // else
+        //     EditableStatus := true;
+        ///Rk 240124
+
+
+        if (RecMHdr1.Status = RecMHdr1.Status::"Pending Approval" ) or (RecMHdr1.Status=RecMHdr1.Status::Released)then
             EditableStatus := false
         else
             EditableStatus := true;
-        ///Rk 240124
     end;
 
     trigger OnAfterGetRecord()
@@ -596,11 +613,19 @@ page 70161 "Mandate E/L Card"
         if (rec.Status = Rec.Status::Open) then StyleTxt := 'Favorable';
         if (Rec.Status <> Rec.Status::Open) then StyleTxt := 'Strong';
         ///Rk 240125
-        if Rec.Status = Rec.Status::"Pending Approval" then
+        // if Rec.Status = Rec.Status::"Pending Approval" then//comment and add below code tejswi22052026
+        //     EditableStatus := false
+        // else
+        //     EditableStatus := true;
+        // //Temp logic //29/01/2024
+
+
+        if (Rec.Status = Rec.Status::"Pending Approval") or (rec.Status= rec.Status::Released) then
             EditableStatus := false
         else
             EditableStatus := true;
-        //Temp logic //29/01/2024
+       
+
         UserSetup.Reset();
         UserSetup.SetRange("User ID", UserId);
 
