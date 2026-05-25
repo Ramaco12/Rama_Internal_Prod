@@ -2,7 +2,7 @@
   "id": "27980b83-f544-4adc-9873-0fb83b868ba0",
   "name": "RamaInternalNewproject",
   "publisher": "Default Publisher",
-  "version": "1.0.0.6",
+  "version": "1.0.0.7",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -11,41 +11,47 @@
   "url": "",
   "logo": "",
   "dependencies": [{
-    "appId": "f3552374-a1f2-4356-848e-196002525837",
+    "id": "f3552374-a1f2-4356-848e-196002525837",
     "name": "Business Foundation",
     "publisher": "Microsoft",
     "version": "27.5.46862.46929"
   },
   {
-    "appId": "d3c551dd-5903-4194-b153-04ced9d29a2c",
+    "id": "d3c551dd-5903-4194-b153-04ced9d29a2c",
     "name": "India Tax Base",
     "publisher": "Microsoft",
     "version": "27.5.46862.46929"
   },
   {
-    "appId": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
+    "id": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
     "name": "India GST",
     "publisher": "Microsoft",
     "version": "27.5.46862.49506"
   },
   {
-    "appId": "eae5779e-7797-4c4c-977e-7516652b7a65",
+    "id": "eae5779e-7797-4c4c-977e-7516652b7a65",
     "name": "India TDS",
     "version": "27.5.46862.48827",
     "publisher": "Microsoft"
   },
-       {
-"id": "343c09c7-e47c-4f03-9499-c69c69da85a3",
-"name": "Rama_Einvoice",
-"publisher": "Default Publisher",
-"version": "1.0.0.1"
-},
-{
-"id": "7106d701-c601-4a5f-97c2-b8b323ae2c18",
-"name": "QR Generator",
-"publisher": "Microsoft",
-"version": "27.5.46862.46929"
-}
+      {
+      "id": "7106d701-c601-4a5f-97c2-b8b323ae2c18",
+      "name": "QR Generator",
+      "publisher": "Microsoft",
+      "version": "25.3.28755.29283"
+    },
+    {
+      "id": "343c09c7-e47c-4f03-9499-c69c69da85a3",
+      "name": "Rama_Einvoice",
+      "publisher": "Default Publisher",
+      "version": "1.0.0.0"
+    },
+        {
+      "id": "f1d9b696-156b-4251-b542-34e549fa80e9",
+      "name": "India Voucher Interface",
+      "publisher": "Microsoft",
+      "version": "25.1.25873.26186"
+    }
 ],
   "screenshots": [],
   "platform": "1.0.0.0",

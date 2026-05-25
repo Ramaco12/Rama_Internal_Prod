@@ -10,6 +10,7 @@ report 70123 "Proforma Invoice"
     UsageCategory = ReportsAndAnalysis;
 
     Permissions = tabledata "Sales Header" = M;
+    EnableHyperlinks = true;
 
     dataset
     {
@@ -50,6 +51,9 @@ report 70123 "Proforma Invoice"
                     column(QrImage; QrImage)
                     {
                     }
+                    column(WorkDescription; "Sales Header".GetWorkDescription) { }
+                    column(Kind_Attention; "Kind Attention") { }
+                    column(CurrCode; CurrCode) { }
                     column(TaxCaption; TaxCaption) { }
                     column(VATAmt; VATAmt) { }
 
@@ -433,6 +437,9 @@ report 70123 "Proforma Invoice"
                         // {
                         // }
                         column(SalesInvLineDesc; "Sales Line".Description)
+                        {
+                        }
+                        column(SalesInvLineDesc2; "Sales Line"."Description 2")
                         {
                         }
                         column(SalesInvChapNo; chapno)
@@ -969,6 +976,11 @@ report 70123 "Proforma Invoice"
                     var
                     // LocationARNMaster: Record 50021;
                     begin
+                        if "Currency Code" = '' then
+                            CurrCode := 'INR'
+                        else
+                            CurrCode := "Currency Code";
+
                         /* IF "Sales Header"."Nature of Supply" = "Sales Header"."Nature of Supply"::B2C THEN
                             // IF NOT "Sales Header"."IRN No. Generated" THEN
                                IF NOT ("Sales Header"."IRN HASH" <> '') THEN
@@ -1405,6 +1417,7 @@ report 70123 "Proforma Invoice"
         RecVendor: Record Vendor;
         OrderAddress: Record "Order Address";
         DispLocation: Record Location;
+        CurrCode: Code[10];
         //QRCode B2C Start
         QRCodeInStreamB2C: InStream;
         QRTextB2C: Text;
@@ -1489,7 +1502,7 @@ report 70123 "Proforma Invoice"
         transporternm: Text[100];
         roadpermitno: Code[20];
         // RepCheck: array[2] of Report Check; //MRP_28/3/25
-        // RepCheck: array[2] of Report "Check Report";
+        RepCheck: array[2] of Report "Check Report";
         NoTextExcise: array[2] of Text[80];
         NoText: array[2] of Text[80];
         Totalfin: Decimal;
@@ -2020,13 +2033,5 @@ report 70123 "Proforma Invoice"
         IF No = 98 THEN EXIT('Ninety Eight');
         IF No = 99 THEN EXIT('Ninety Nine');
     END;
-
-    procedure SetSalesHeader(P_SalesHeader: Record "Sales Header")
-    begin
-        SalesHeader := P_SalesHeader;
-    end;
-
-    var
-        SalesHeader: Record "Sales Header";
 }
 

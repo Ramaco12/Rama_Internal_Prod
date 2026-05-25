@@ -9,6 +9,7 @@ report 70122 "Sales Tax Invoice"
     UsageCategory = ReportsAndAnalysis;
 
     Permissions = tabledata "Sales Invoice Header" = M;
+    EnableHyperlinks = true;
 
     dataset
     {
@@ -48,6 +49,9 @@ report 70122 "Sales Tax Invoice"
                     column(QrImage; QrImage)
                     {
                     }
+                    column(WorkDescription; "Sales Invoice Header".GetWorkDescription) { }
+                    column(Kind_Attention; "Kind Attention") { }
+                    column(CurrCode; CurrCode) { }
                     column(TaxCaption; TaxCaption) { }
                     column(VATAmt; VATAmt) { }
 
@@ -431,6 +435,9 @@ report 70122 "Sales Tax Invoice"
                         // {
                         // }
                         column(SalesInvLineDesc; "Sales Invoice Line".Description)
+                        {
+                        }
+                        column(SalesInvLineDesc2; "Sales Invoice Line"."Description 2")
                         {
                         }
                         column(SalesInvChapNo; chapno)
@@ -891,6 +898,11 @@ report 70122 "Sales Tax Invoice"
                     var
                     // LocationARNMaster: Record 50021;
                     begin
+                        if "Currency Code" = '' then
+                            CurrCode := 'INR'
+                        else
+                            CurrCode := "Currency Code";
+
                         IF "Sales Invoice Header"."Nature of Supply" = "Sales Invoice Header"."Nature of Supply"::B2C THEN
                             // IF NOT "Sales Invoice Header"."IRN No. Generated" THEN
                                IF NOT ("Sales Invoice Header"."IRN HASH" <> '') THEN
@@ -1324,6 +1336,7 @@ report 70122 "Sales Tax Invoice"
         RecVendor: Record Vendor;
         OrderAddress: Record "Order Address";
         DispLocation: Record Location;
+        CurrCode: Code[10];
         //QRCode B2C Start
         QRCodeInStreamB2C: InStream;
         QRTextB2C: Text;
@@ -1408,7 +1421,7 @@ report 70122 "Sales Tax Invoice"
         transporternm: Text[100];
         roadpermitno: Code[20];
         // RepCheck: array[2] of Report Check; //MRP_28/3/25
-        //RepCheck: array[2] of Report "Check Report";
+        RepCheck: array[2] of Report "Check Report";
         NoTextExcise: array[2] of Text[80];
         NoText: array[2] of Text[80];
         Totalfin: Decimal;

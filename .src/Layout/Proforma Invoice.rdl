@@ -24,7 +24,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>3.89254cm</Height>
+                  <Height>4.35575cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -37,7 +37,10 @@
                                     <Width>0.28372in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.25432in</Width>
+                                    <Width>1.66in</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>1.91498in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.55468in</Width>
@@ -49,25 +52,16 @@
                                     <Width>0.36708in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.78617in</Width>
+                                    <Width>0.82in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.9558in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>0.32517in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>0.37736in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>0.52505in</Width>
+                                    <Width>0.81246in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.37155in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.59004in</Width>
+                                    <Width>0.60845in</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
@@ -141,7 +135,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Description Of Service</Value>
+                                                    <Value>Billing for</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -155,6 +149,64 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox43</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <BackgroundColor>PaleTurquoise</BackgroundColor>
+                                              <VerticalAlign>Middle</VerticalAlign>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox30">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>Description</Value>
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox30</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>CornflowerBlue</Color>
@@ -373,7 +425,23 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Rate</Value>
+                                                    <Value>Rate(</Value>
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>=Fields!CurrCode.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>)</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -422,124 +490,6 @@
                                           </Textbox>
                                         </CellContents>
                                       </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox48">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>Total Value</Value>
-                                                    <Style>
-                                                      <FontFamily>Trebuchet MS</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Center</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox48</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                              </Border>
-                                              <TopBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </TopBorder>
-                                              <BottomBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </BottomBorder>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
-                                              <BackgroundColor>PaleTurquoise</BackgroundColor>
-                                              <VerticalAlign>Middle</VerticalAlign>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox169">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>Amount/Dis.</Value>
-                                                    <Style>
-                                                      <FontFamily>Trebuchet MS</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Center</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox169</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                              </Border>
-                                              <TopBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </TopBorder>
-                                              <BottomBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </BottomBorder>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
-                                              <BackgroundColor>PaleTurquoise</BackgroundColor>
-                                              <VerticalAlign>Middle</VerticalAlign>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>2</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell />
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox1174">
@@ -615,7 +565,23 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Taxable Value</Value>
+                                                    <Value>Taxable Value(</Value>
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>=Fields!CurrCode.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>)</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -736,6 +702,51 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox13</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <LeftBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <BackgroundColor>White</BackgroundColor>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox31">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Fields!SalesInvLineDesc2.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox31</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -943,101 +954,6 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Textbox203">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!SalesInvLinLnAmt.Value + Fields!LineDiscount_SIL.Value</Value>
-                                                    <Style>
-                                                      <FontFamily>Trebuchet MS</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                      <FontWeight>Normal</FontWeight>
-                                                      <Format>n2</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Right</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox203</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
-                                              <BackgroundColor>White</BackgroundColor>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox25">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!LineDiscount_SIL.Value</Value>
-                                                    <Style>
-                                                      <FontFamily>Trebuchet MS</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                      <Format>n2</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Right</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox25</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
-                                              <BackgroundColor>White</BackgroundColor>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>2</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell />
-                                      <TablixCell>
-                                        <CellContents>
                                           <Textbox Name="Textbox1175">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
@@ -1045,7 +961,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CGSTPer.Value + Fields!SGSTPer.Value + Fields!IGSTPer.Value + Fields!VATPer.Value</Value>
+                                                    <Value>=Fields!CGSTAmt.Value + Fields!SGSTAmt.Value + Fields!IGSTAmt.Value + Fields!VATAmount.Value</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1054,7 +970,7 @@
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
-                                                  <TextAlign>Center</TextAlign>
+                                                  <TextAlign>Right</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
@@ -1191,9 +1107,10 @@
                                               <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
-                                          <ColSpan>3</ColSpan>
+                                          <ColSpan>4</ColSpan>
                                         </CellContents>
                                       </TablixCell>
+                                      <TablixCell />
                                       <TablixCell />
                                       <TablixCell />
                                       <TablixCell>
@@ -1317,43 +1234,26 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value>=sum(Fields!UnitPrice_SIL.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
+                                                      <Format>n2</Format>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox220</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>CornflowerBlue</Color>
-                                                <Style>None</Style>
+                                                <Style>Solid</Style>
                                               </Border>
-                                              <TopBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </TopBorder>
-                                              <BottomBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </BottomBorder>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
                                               <BackgroundColor>PaleTurquoise</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1363,124 +1263,6 @@
                                           </Textbox>
                                         </CellContents>
                                       </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox266">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Sum(Fields!SalesInvLinLnAmt.Value) + Sum(Fields!LineDiscount_SIL.Value)</Value>
-                                                    <Style>
-                                                      <FontFamily>Trebuchet MS</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                      <Format>n2</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Right</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox203</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <TopBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </TopBorder>
-                                              <BottomBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </BottomBorder>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
-                                              <BackgroundColor>PaleTurquoise</BackgroundColor>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox179">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Sum(Fields!LineDiscount_SIL.Value)</Value>
-                                                    <Style>
-                                                      <FontFamily>Trebuchet MS</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                      <Format>n2</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Right</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox25</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <TopBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </TopBorder>
-                                              <BottomBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </BottomBorder>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
-                                              <BackgroundColor>PaleTurquoise</BackgroundColor>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>2</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell />
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox1196">
@@ -1490,11 +1272,12 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value>=sum(Fields!CGSTAmt.Value) + sum(Fields!SGSTAmt.Value) + sum(Fields!IGSTAmt.Value) + sum(Fields!VATAmount.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
+                                                      <Format>n2</Format>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1507,28 +1290,8 @@
                                             <Style>
                                               <Border>
                                                 <Color>CornflowerBlue</Color>
-                                                <Style>None</Style>
+                                                <Style>Solid</Style>
                                               </Border>
-                                              <TopBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </TopBorder>
-                                              <BottomBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </BottomBorder>
-                                              <LeftBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </LeftBorder>
-                                              <RightBorder>
-                                                <Color>CornflowerBlue</Color>
-                                                <Style>Solid</Style>
-                                                <Width>1pt</Width>
-                                              </RightBorder>
                                               <BackgroundColor>PaleTurquoise</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1614,8 +1377,6 @@
                                   <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
-                                  <TablixMember />
-                                  <TablixMember />
                                 </TablixMembers>
                               </TablixColumnHierarchy>
                               <TablixRowHierarchy>
@@ -1646,7 +1407,7 @@
                               </TablixRowHierarchy>
                               <DataSetName>DataSet_Result</DataSetName>
                               <Height>0.52278in</Height>
-                              <Width>7.86604in</Width>
+                              <Width>7.86802in</Width>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -1657,19 +1418,178 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>14.88569cm</Width>
+                                    <Width>14.1128cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1.31501cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.3333cm</Width>
+                                    <Width>2.06366cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.45077cm</Width>
+                                    <Width>2.4892cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
+                                  <TablixRow>
+                                    <Height>0.38149cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox33">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox33</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <RightBorder>
+                                                <Style>None</Style>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox35">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox35</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <LeftBorder>
+                                                <Style>None</Style>
+                                              </LeftBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox36">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox36</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox38">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Trebuchet MS</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox38</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>CornflowerBlue</Color>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
                                   <TablixRow>
                                     <Height>0.38149cm</Height>
                                     <TablixCells>
@@ -1750,7 +1670,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>CGST</Value>
+                                                    <Value>CGST@9%</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1914,7 +1834,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>SGST</Value>
+                                                    <Value>SGST@9%</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2098,7 +2018,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>IGST</Value>
+                                                    <Value>IGST@18%</Value>
                                                     <Style>
                                                       <FontFamily>Trebuchet MS</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2781,6 +2701,7 @@
                               </TablixColumnHierarchy>
                               <TablixRowHierarchy>
                                 <TablixMembers>
+                                  <TablixMember />
                                   <TablixMember>
                                     <Visibility>
                                       <Hidden>=IIF(Fields!CGSTAmt.Value = 0,TRUE,FALSE)</Hidden>
@@ -2811,8 +2732,8 @@
                               </TablixRowHierarchy>
                               <Top>1.32786cm</Top>
                               <Left>0.0041cm</Left>
-                              <Height>2.42789cm</Height>
-                              <Width>19.98477cm</Width>
+                              <Height>2.80938cm</Height>
+                              <Width>19.98067cm</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
                                 <Border>
@@ -2928,7 +2849,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>0in</Top>
-            <Height>3.89254cm</Height>
+            <Height>4.35575cm</Height>
             <Width>19.98887cm</Width>
             <Style>
               <Border>
@@ -2937,7 +2858,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>3.89254cm</Height>
+        <Height>5.76226cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3064,7 +2985,7 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox122</rd:DefaultName>
-                  <Top>5.21984cm</Top>
+                  <Top>4.93409cm</Top>
                   <Height>0.48992cm</Height>
                   <Width>5.43376cm</Width>
                   <Style>
@@ -3120,7 +3041,7 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox122</rd:DefaultName>
-                  <Top>5.21984cm</Top>
+                  <Top>4.93409cm</Top>
                   <Left>5.43374cm</Left>
                   <Height>0.48992cm</Height>
                   <Width>14.54454cm</Width>
@@ -3144,7 +3065,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Buyer's Order No.</Value>
+                          <Value>Reverse Charge</Value>
                           <Style>
                             <FontFamily>Trebuchet MS</FontFamily>
                             <FontSize>8pt</FontSize>
@@ -3156,7 +3077,7 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                  <Top>7.27086cm</Top>
+                  <Top>7.43316cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.42248cm</Height>
                   <Width>2.64265cm</Width>
@@ -3189,7 +3110,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>=Fields!External_Document_No_.Value</Value>
+                          <Value>No</Value>
                           <Style>
                             <FontFamily>Trebuchet MS</FontFamily>
                             <FontSize>8pt</FontSize>
@@ -3201,7 +3122,7 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox32</rd:DefaultName>
-                  <Top>7.27086cm</Top>
+                  <Top>7.43316cm</Top>
                   <Left>2.744cm</Left>
                   <Height>0.42248cm</Height>
                   <Width>16.6508cm</Width>
@@ -3214,36 +3135,16 @@
                     <PaddingRight>2pt</PaddingRight>
                   </Style>
                 </Textbox>
-                <Image Name="Image2">
-                  <Source>Database</Source>
-                  <Value>=First(Fields!Picturetest.Value, "DataSet_Result")</Value>
-                  <MIMEType>image/png</MIMEType>
-                  <Sizing>FitProportional</Sizing>
-                  <Top>1.21579cm</Top>
-                  <Left>0.02647cm</Left>
-                  <Height>1.91925cm</Height>
-                  <Width>2.72202cm</Width>
-                  <ZIndex>4</ZIndex>
-                  <Visibility>
-                    <Hidden>=Fields!showoldpic.Value = false</Hidden>
-                  </Visibility>
-                  <ToolTip>=First(Fields!Picturetest.Value, "DataSet_Result")</ToolTip>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Image>
                 <Image Name="Image4">
                   <Source>Database</Source>
                   <Value>=First(Fields!HeaderBox1Picture.Value, "DataSet_Result")</Value>
                   <MIMEType>image/png</MIMEType>
                   <Sizing>FitProportional</Sizing>
-                  <Top>1.21579cm</Top>
-                  <Left>0.021cm</Left>
-                  <Height>1.85236cm</Height>
-                  <Width>2.72749cm</Width>
-                  <ZIndex>5</ZIndex>
+                  <Top>0.97398cm</Top>
+                  <Left>0.02453cm</Left>
+                  <Height>2.2cm</Height>
+                  <Width>4cm</Width>
+                  <ZIndex>4</ZIndex>
                   <Visibility>
                     <Hidden>=Fields!showoldpic.Value = true</Hidden>
                   </Visibility>
@@ -3278,51 +3179,9 @@
                       </Paragraphs>
                       <rd:DefaultName>Textbox87</rd:DefaultName>
                       <Top>0.03438in</Top>
-                      <Left>0.10935cm</Left>
+                      <Left>0.3099cm</Left>
                       <Height>0.33572cm</Height>
-                      <Width>16.8726cm</Width>
-                      <Style>
-                        <Border>
-                          <Style>None</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                      </Style>
-                    </Textbox>
-                    <Textbox Name="Textbox92">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>="Billing Address : "</Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!HeaderBox1Line2.Value + " " + Fields!HeaderBox1Line3.Value</Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox88</rd:DefaultName>
-                      <Top>0.79832cm</Top>
-                      <Left>0.14464cm</Left>
-                      <Height>0.41747cm</Height>
-                      <Width>16.83731cm</Width>
-                      <ZIndex>1</ZIndex>
+                      <Width>13.6976cm</Width>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -3375,7 +3234,37 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>=Fields!CompEmail.Value</Value>
+                              <Value>accounts@rama.co.in / info@rama.co.in</Value>
+                              <Style>
+                                <FontFamily>Trebuchet MS</FontFamily>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Normal</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Web- </Value>
+                              <Style>
+                                <FontFamily>Trebuchet MS</FontFamily>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>www.rama.co.in / www.ramaerp.in</Value>
+                              <ActionInfo>
+                                <Actions>
+                                  <Action>
+                                    <Hyperlink>www.rama.co.in</Hyperlink>
+                                  </Action>
+                                </Actions>
+                              </ActionInfo>
                               <Style>
                                 <FontFamily>Trebuchet MS</FontFamily>
                                 <FontSize>8pt</FontSize>
@@ -3389,11 +3278,11 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox16</rd:DefaultName>
-                      <Top>1.21579cm</Top>
-                      <Left>0.10936cm</Left>
+                      <Top>0.83479cm</Top>
+                      <Left>0.30991cm</Left>
                       <Height>0.44584cm</Height>
-                      <Width>14.57367cm</Width>
-                      <ZIndex>2</ZIndex>
+                      <Width>13.147cm</Width>
+                      <ZIndex>1</ZIndex>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -3421,68 +3310,13 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value> CIN No -</Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value xml:space="preserve"> </Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Normal</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!CNINO.Value</Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Normal</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value xml:space="preserve">  </Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Normal</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>PAN No. </Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!Comp_PANNo.Value</Value>
-                              <Style>
-                                <FontFamily>Trebuchet MS</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox89</rd:DefaultName>
                       <Top>0.45832cm</Top>
-                      <Left>0.14972cm</Left>
+                      <Left>0.35027cm</Left>
                       <Height>0.34cm</Height>
-                      <Width>16.83732cm</Width>
-                      <ZIndex>3</ZIndex>
+                      <Width>13.66232cm</Width>
+                      <ZIndex>2</ZIndex>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -3493,10 +3327,10 @@
                     </Textbox>
                   </ReportItems>
                   <KeepTogether>true</KeepTogether>
-                  <Left>2.77516cm</Left>
+                  <Left>4.05628cm</Left>
                   <Height>3.16394cm</Height>
-                  <Width>17.1716cm</Width>
-                  <ZIndex>6</ZIndex>
+                  <Width>15.89048cm</Width>
+                  <ZIndex>5</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3511,7 +3345,7 @@
                   <Left>0.02328cm</Left>
                   <Height>0cm</Height>
                   <Width>19.92702cm</Width>
-                  <ZIndex>7</ZIndex>
+                  <ZIndex>6</ZIndex>
                   <Style>
                     <Border>
                       <Style>Solid</Style>
@@ -3537,11 +3371,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                  <Top>8.14757cm</Top>
+                  <Top>8.30987cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.36114cm</Height>
                   <Width>2.64265cm</Width>
-                  <ZIndex>8</ZIndex>
+                  <ZIndex>7</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3582,11 +3416,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox32</rd:DefaultName>
-                  <Top>8.14757cm</Top>
+                  <Top>8.30987cm</Top>
                   <Left>2.74849cm</Left>
                   <Height>0.36114cm</Height>
                   <Width>3.4024cm</Width>
-                  <ZIndex>9</ZIndex>
+                  <ZIndex>8</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3614,11 +3448,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                  <Top>8.14757cm</Top>
+                  <Top>8.30987cm</Top>
                   <Left>6.15089cm</Left>
                   <Height>0.36114cm</Height>
                   <Width>1.85464cm</Width>
-                  <ZIndex>10</ZIndex>
+                  <ZIndex>9</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3659,109 +3493,15 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox32</rd:DefaultName>
-                  <Top>8.14757cm</Top>
+                  <Top>8.30987cm</Top>
                   <Left>8.00104cm</Left>
                   <Height>0.36114cm</Height>
                   <Width>11.39376cm</Width>
-                  <ZIndex>11</ZIndex>
+                  <ZIndex>10</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
                     </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox847">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>  GST No.</Value>
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>8pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Left</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox845</rd:DefaultName>
-                  <Top>3.68271cm</Top>
-                  <Left>0.10584cm</Left>
-                  <Height>0.35cm</Height>
-                  <Width>2.64265cm</Width>
-                  <ZIndex>12</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <TopBorder>
-                      <Style>None</Style>
-                    </TopBorder>
-                    <BottomBorder>
-                      <Style>None</Style>
-                    </BottomBorder>
-                    <LeftBorder>
-                      <Style>None</Style>
-                    </LeftBorder>
-                    <RightBorder>
-                      <Style>None</Style>
-                    </RightBorder>
-                    <VerticalAlign>Bottom</VerticalAlign>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox848">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=Fields!GSTLoction.Value</Value>
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>8pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Left</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox845</rd:DefaultName>
-                  <Top>3.68271cm</Top>
-                  <Left>2.74849cm</Left>
-                  <Height>0.35cm</Height>
-                  <Width>14.7647cm</Width>
-                  <ZIndex>13</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <TopBorder>
-                      <Style>None</Style>
-                    </TopBorder>
-                    <BottomBorder>
-                      <Style>None</Style>
-                    </BottomBorder>
-                    <LeftBorder>
-                      <Style>None</Style>
-                    </LeftBorder>
-                    <RightBorder>
-                      <Style>None</Style>
-                    </RightBorder>
-                    <VerticalAlign>Bottom</VerticalAlign>
                     <PaddingLeft>2pt</PaddingLeft>
                     <PaddingRight>2pt</PaddingRight>
                   </Style>
@@ -3773,7 +3513,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>  Invoice No.</Value>
+                          <Value>Invoice No.</Value>
                           <Style>
                             <FontFamily>Trebuchet MS</FontFamily>
                             <FontSize>8pt</FontSize>
@@ -3786,11 +3526,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox358</rd:DefaultName>
-                  <Top>4.06799cm</Top>
+                  <Top>3.71874cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.35cm</Height>
                   <Width>2.64265cm</Width>
-                  <ZIndex>14</ZIndex>
+                  <ZIndex>11</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3832,11 +3572,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox358</rd:DefaultName>
-                  <Top>4.06799cm</Top>
+                  <Top>3.71874cm</Top>
                   <Left>2.74849cm</Left>
                   <Height>0.35cm</Height>
                   <Width>14.7647cm</Width>
-                  <ZIndex>15</ZIndex>
+                  <ZIndex>12</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3856,7 +3596,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>  Invoice Date</Value>
+                          <Value>Invoice Date</Value>
                           <Style>
                             <FontFamily>Trebuchet MS</FontFamily>
                             <FontSize>8pt</FontSize>
@@ -3869,11 +3609,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>4.41799cm</Top>
+                  <Top>4.06874cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.35cm</Height>
                   <Width>2.64265cm</Width>
-                  <ZIndex>16</ZIndex>
+                  <ZIndex>13</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3916,89 +3656,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>4.41799cm</Top>
+                  <Top>4.06874cm</Top>
                   <Left>2.74849cm</Left>
                   <Height>0.35cm</Height>
                   <Width>14.7647cm</Width>
-                  <ZIndex>17</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <TopBorder>
-                      <Style>None</Style>
-                    </TopBorder>
-                    <BottomBorder>
-                      <Style>None</Style>
-                    </BottomBorder>
-                    <LeftBorder>
-                      <Style>None</Style>
-                    </LeftBorder>
-                    <RightBorder>
-                      <Style>None</Style>
-                    </RightBorder>
-                    <VerticalAlign>Bottom</VerticalAlign>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox7">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=Fields!PaymentTermsCode_SIH.Value</Value>
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>8pt</FontSize>
-                            <FontWeight>Normal</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox7</rd:DefaultName>
-                  <Top>4.79929cm</Top>
-                  <Left>2.744cm</Left>
-                  <Height>0.35cm</Height>
-                  <Width>14.7647cm</Width>
-                  <ZIndex>18</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox10">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>  Terms of Payment </Value>
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Left</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>4.79576cm</Top>
-                  <Left>0.10584cm</Left>
-                  <Height>0.35cm</Height>
-                  <Width>2.64265cm</Width>
-                  <ZIndex>19</ZIndex>
+                  <ZIndex>14</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4041,11 +3703,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox845</rd:DefaultName>
-                  <Top>5.70976cm</Top>
+                  <Top>5.42401cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.44805cm</Height>
                   <Width>2.64265cm</Width>
-                  <ZIndex>20</ZIndex>
+                  <ZIndex>15</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4088,11 +3750,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox845</rd:DefaultName>
-                  <Top>5.70976cm</Top>
+                  <Top>5.42401cm</Top>
                   <Left>2.74849cm</Left>
                   <Height>0.44805cm</Height>
                   <Width>16.6508cm</Width>
-                  <ZIndex>21</ZIndex>
+                  <ZIndex>16</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4135,11 +3797,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox358</rd:DefaultName>
-                  <Top>6.15781cm</Top>
+                  <Top>6.32011cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.38528cm</Height>
                   <Width>2.64265cm</Width>
-                  <ZIndex>22</ZIndex>
+                  <ZIndex>17</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4182,11 +3844,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox358</rd:DefaultName>
-                  <Top>6.15781cm</Top>
+                  <Top>6.32011cm</Top>
                   <Left>2.744cm</Left>
                   <Height>0.38528cm</Height>
                   <Width>16.6508cm</Width>
-                  <ZIndex>23</ZIndex>
+                  <ZIndex>18</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4220,11 +3882,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>6.54309cm</Top>
+                  <Top>6.70539cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.31689cm</Height>
                   <Width>2.64265cm</Width>
-                  <ZIndex>24</ZIndex>
+                  <ZIndex>19</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4255,7 +3917,7 @@
                         <TextRun>
                           <Value>=Fields!CUstomerPAN.Value</Value>
                           <Style>
-                            <FontFamily>Segoe UI</FontFamily>
+                            <FontFamily>Trebuchet MS</FontFamily>
                             <FontSize>8pt</FontSize>
                             <FontWeight>Bold</FontWeight>
                           </Style>
@@ -4267,11 +3929,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>6.54309cm</Top>
+                  <Top>6.70539cm</Top>
                   <Left>2.74849cm</Left>
                   <Height>0.34602cm</Height>
                   <Width>16.6508cm</Width>
-                  <ZIndex>25</ZIndex>
+                  <ZIndex>20</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4312,11 +3974,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox7</rd:DefaultName>
-                  <Top>6.88558cm</Top>
+                  <Top>7.04788cm</Top>
                   <Left>2.74849cm</Left>
                   <Height>0.38881cm</Height>
                   <Width>16.6508cm</Width>
-                  <ZIndex>26</ZIndex>
+                  <ZIndex>21</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4346,11 +4008,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>6.88205cm</Top>
+                  <Top>7.04435cm</Top>
                   <Left>0.10584cm</Left>
                   <Height>0.38881cm</Height>
                   <Width>2.64265cm</Width>
-                  <ZIndex>27</ZIndex>
+                  <ZIndex>22</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4391,11 +4053,11 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                  <Top>7.72862cm</Top>
+                  <Top>7.89092cm</Top>
                   <Left>0.11936cm</Left>
                   <Height>0.41895cm</Height>
-                  <Width>2.64265cm</Width>
-                  <ZIndex>28</ZIndex>
+                  <Width>2.62052cm</Width>
+                  <ZIndex>23</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4436,51 +4098,17 @@
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox32</rd:DefaultName>
-                  <Top>7.72862cm</Top>
-                  <Left>2.77516cm</Left>
+                  <Top>7.89092cm</Top>
+                  <Left>2.73988cm</Left>
                   <Height>0.41895cm</Height>
-                  <Width>16.63765cm</Width>
-                  <ZIndex>29</ZIndex>
+                  <Width>16.67293cm</Width>
+                  <ZIndex>24</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
                     </Border>
                     <PaddingLeft>2pt</PaddingLeft>
                     <PaddingRight>2pt</PaddingRight>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox1">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value />
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>8pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>8.68741cm</Top>
-                  <Left>2.01667cm</Left>
-                  <Height>0.6cm</Height>
-                  <Width>2.5cm</Width>
-                  <ZIndex>30</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox125">
@@ -4508,7 +4136,7 @@
                   <Left>0.02328cm</Left>
                   <Height>0.48992cm</Height>
                   <Width>19.955cm</Width>
-                  <ZIndex>31</ZIndex>
+                  <ZIndex>25</ZIndex>
                   <Style>
                     <Border>
                       <Style>Solid</Style>
@@ -4539,6 +4167,292 @@
                     <PaddingRight>2pt</PaddingRight>
                     <PaddingTop>2pt</PaddingTop>
                     <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox851">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Kind Attention</Value>
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox845</rd:DefaultName>
+                  <Top>5.87206cm</Top>
+                  <Left>0.10584cm</Left>
+                  <Height>0.44805cm</Height>
+                  <Width>2.64265cm</Width>
+                  <ZIndex>26</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>None</Style>
+                    </TopBorder>
+                    <BottomBorder>
+                      <Style>None</Style>
+                    </BottomBorder>
+                    <LeftBorder>
+                      <Style>None</Style>
+                    </LeftBorder>
+                    <RightBorder>
+                      <Style>None</Style>
+                    </RightBorder>
+                    <VerticalAlign>Bottom</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox852">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=Fields!Kind_Attention.Value</Value>
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox845</rd:DefaultName>
+                  <Top>5.87206cm</Top>
+                  <Left>2.74849cm</Left>
+                  <Height>0.44805cm</Height>
+                  <Width>16.6508cm</Width>
+                  <ZIndex>27</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>None</Style>
+                    </TopBorder>
+                    <BottomBorder>
+                      <Style>None</Style>
+                    </BottomBorder>
+                    <LeftBorder>
+                      <Style>None</Style>
+                    </LeftBorder>
+                    <RightBorder>
+                      <Style>None</Style>
+                    </RightBorder>
+                    <VerticalAlign>Bottom</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox847">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>GST No.</Value>
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox845</rd:DefaultName>
+                  <Top>4.41874cm</Top>
+                  <Left>0.11936cm</Left>
+                  <Height>0.35cm</Height>
+                  <Width>2.64265cm</Width>
+                  <ZIndex>28</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>None</Style>
+                    </TopBorder>
+                    <BottomBorder>
+                      <Style>None</Style>
+                    </BottomBorder>
+                    <LeftBorder>
+                      <Style>None</Style>
+                    </LeftBorder>
+                    <RightBorder>
+                      <Style>None</Style>
+                    </RightBorder>
+                    <VerticalAlign>Bottom</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox848">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=Fields!GSTLoction.Value</Value>
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox845</rd:DefaultName>
+                  <Top>4.41874cm</Top>
+                  <Left>2.76201cm</Left>
+                  <Height>0.35cm</Height>
+                  <Width>3.37573cm</Width>
+                  <ZIndex>29</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>None</Style>
+                    </TopBorder>
+                    <BottomBorder>
+                      <Style>None</Style>
+                    </BottomBorder>
+                    <LeftBorder>
+                      <Style>None</Style>
+                    </LeftBorder>
+                    <RightBorder>
+                      <Style>None</Style>
+                    </RightBorder>
+                    <VerticalAlign>Bottom</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox854">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value xml:space="preserve">  </Value>
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>PAN No. </Value>
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox845</rd:DefaultName>
+                  <Top>4.4258cm</Top>
+                  <Left>6.13774cm</Left>
+                  <Height>0.35cm</Height>
+                  <Width>1.85464cm</Width>
+                  <ZIndex>30</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>None</Style>
+                    </TopBorder>
+                    <BottomBorder>
+                      <Style>None</Style>
+                    </BottomBorder>
+                    <LeftBorder>
+                      <Style>None</Style>
+                    </LeftBorder>
+                    <RightBorder>
+                      <Style>None</Style>
+                    </RightBorder>
+                    <VerticalAlign>Bottom</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox855">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=Fields!Comp_PANNo.Value</Value>
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox845</rd:DefaultName>
+                  <Top>4.4258cm</Top>
+                  <Left>7.98789cm</Left>
+                  <Height>0.35cm</Height>
+                  <Width>4.52713cm</Width>
+                  <ZIndex>31</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>None</Style>
+                    </TopBorder>
+                    <BottomBorder>
+                      <Style>None</Style>
+                    </BottomBorder>
+                    <LeftBorder>
+                      <Style>None</Style>
+                    </LeftBorder>
+                    <RightBorder>
+                      <Style>None</Style>
+                    </RightBorder>
+                    <VerticalAlign>Bottom</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
                   </Style>
                 </Textbox>
               </ReportItems>
@@ -4632,7 +4546,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>4.35724cm</Height>
+          <Height>5.33155cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -4647,7 +4561,7 @@
                         <TextRun>
                           <Value>="Declaration:" + Chr(13) &amp; Chr(10) &amp; "The above bill has been raised after successful 
 completion of the services as per mutually agreed 
-terms &amp; conditions. The payment is due on submission of the bill"</Value>
+terms &amp; conditions. The payment is as per agreed terms."</Value>
                           <Style>
                             <FontFamily>Trebuchet MS</FontFamily>
                             <FontSize>8pt</FontSize>
@@ -4661,7 +4575,7 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox29</rd:DefaultName>
-                  <Top>0.72332cm</Top>
+                  <Top>0.03527cm</Top>
                   <Height>0.383cm</Height>
                   <Width>19.94673cm</Width>
                   <Style>
@@ -4724,7 +4638,7 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox236</rd:DefaultName>
-                  <Top>1.10633cm</Top>
+                  <Top>0.41828cm</Top>
                   <Height>0.5093cm</Height>
                   <Width>6.45198cm</Width>
                   <ZIndex>1</ZIndex>
@@ -4781,7 +4695,7 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1357</rd:DefaultName>
-                  <Top>1.10633cm</Top>
+                  <Top>0.41828cm</Top>
                   <Left>6.45198cm</Left>
                   <Height>0.5093cm</Height>
                   <Width>5.51637cm</Width>
@@ -4839,7 +4753,7 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1360</rd:DefaultName>
-                  <Top>1.10633cm</Top>
+                  <Top>0.41828cm</Top>
                   <Left>11.96835cm</Left>
                   <Height>0.5093cm</Height>
                   <Width>3.75745cm</Width>
@@ -4897,7 +4811,7 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1197</rd:DefaultName>
-                  <Top>1.10633cm</Top>
+                  <Top>0.41828cm</Top>
                   <Left>15.7258cm</Left>
                   <Height>0.5093cm</Height>
                   <Width>4.22801cm</Width>
@@ -4992,9 +4906,9 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox446</rd:DefaultName>
-                  <Top>1.61563cm</Top>
-                  <Height>2.10661cm</Height>
-                  <Width>6.45198cm</Width>
+                  <Top>0.92758cm</Top>
+                  <Height>4.06cm</Height>
+                  <Width>13.41499cm</Width>
                   <ZIndex>5</ZIndex>
                   <Style>
                     <Border>
@@ -5012,89 +4926,6 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                       <Width>1pt</Width>
                     </RightBorder>
                     <BackgroundColor>Pink</BackgroundColor>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox1386">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value />
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>9pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value />
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>9pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value />
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>9pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Receiver Signature</Value>
-                          <Style>
-                            <FontFamily>Trebuchet MS</FontFamily>
-                            <FontSize>8pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox1386</rd:DefaultName>
-                  <Top>1.61563cm</Top>
-                  <Left>6.45198cm</Left>
-                  <Height>2.10661cm</Height>
-                  <Width>6.96301cm</Width>
-                  <ZIndex>6</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <BackgroundColor>Pink</BackgroundColor>
-                    <VerticalAlign>Top</VerticalAlign>
                     <PaddingLeft>2pt</PaddingLeft>
                     <PaddingRight>2pt</PaddingRight>
                     <PaddingTop>2pt</PaddingTop>
@@ -5160,7 +4991,67 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Signatory(Name &amp; Designation)</Value>
+                          <Value />
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value />
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value />
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value />
+                          <Style>
+                            <FontFamily>Trebuchet MS</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Authorised Signatory</Value>
                           <Style>
                             <FontFamily>Trebuchet MS</FontFamily>
                             <FontSize>8pt</FontSize>
@@ -5174,11 +5065,11 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1393</rd:DefaultName>
-                  <Top>1.61563cm</Top>
+                  <Top>0.92758cm</Top>
                   <Left>13.41499cm</Left>
-                  <Height>2.10661cm</Height>
+                  <Height>4.06cm</Height>
                   <Width>6.54235cm</Width>
-                  <ZIndex>7</ZIndex>
+                  <ZIndex>6</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5203,7 +5094,7 @@ terms &amp; conditions. The payment is due on submission of the bill"</Value>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>0.00001cm</Top>
-              <Height>3.72224cm</Height>
+              <Height>4.98758cm</Height>
               <Width>19.95734cm</Width>
               <Style>
                 <Border>
@@ -5322,6 +5213,15 @@ End Function
         </Field>
         <Field Name="QrImage">
           <DataField>QrImage</DataField>
+        </Field>
+        <Field Name="WorkDescription">
+          <DataField>WorkDescription</DataField>
+        </Field>
+        <Field Name="Kind_Attention">
+          <DataField>Kind_Attention</DataField>
+        </Field>
+        <Field Name="CurrCode">
+          <DataField>CurrCode</DataField>
         </Field>
         <Field Name="TaxCaption">
           <DataField>TaxCaption</DataField>
@@ -5670,6 +5570,9 @@ End Function
         </Field>
         <Field Name="SalesInvLineDesc">
           <DataField>SalesInvLineDesc</DataField>
+        </Field>
+        <Field Name="SalesInvLineDesc2">
+          <DataField>SalesInvLineDesc2</DataField>
         </Field>
         <Field Name="SalesInvChapNo">
           <DataField>SalesInvChapNo</DataField>

@@ -36,5 +36,11 @@ tableextension 70104 SalesInvHrExt extends "Sales Invoice Header"
             DataClassification = ToBeClassified;
         }
 
+        field(70112; "Kind Attention"; Text[50]) //PK_18/05/26
+        {
+            Caption = 'Kind Attention';
+            DataClassification = ToBeClassified;
+        }
+
     }
 }

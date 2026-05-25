@@ -3,32 +3,38 @@ pageextension 70108 SalesInvExt extends "Sales Invoice"
 
     layout
     {
-
-    }
-    actions
-    {
-        addafter(Dimensions)
+        addafter("Your Reference")
         {
-
-            action("Proforma Invoice")
+            field("Kind Attention"; Rec."Kind Attention")
             {
                 ApplicationArea = all;
-                Image = Report;
+            }
+        }
+    }
+
+    actions
+    {
+        addafter(ProformaInvoice)
+        {
+            action("Proforma Invoice")
+            {
                 Caption = 'Proforma Invoice';
+                ApplicationArea = all;
+                Image = "Report";
                 Promoted = true;
-                PromotedCategory = New;
-                //Promoted = true;
-                // PromotedCategory = Category11;
+                PromotedCategory = Report;
+                // Visible = ShowInvoiceIN;
+
                 trigger OnAction()
                 var
-                    IsHandled: Boolean;
-                    ProformaReport: Report "Proforma Invoice";
+                    SalesHdr: Record "Sales Header";
                 begin
-                    ProformaReport.SetSalesHeader(Rec);
-                    ProformaReport.RunModal();
+                    SalesHdr.RESET;
+                    SalesHdr.SETRANGE("No.", Rec."No.");
+                    IF SalesHdr.FINDFIRST THEN
+                        REPORT.RUNMODAL(70123, TRUE, FALSE, SalesHdr);
                 end;
             }
-
         }
     }
     var
