@@ -371,5 +371,29 @@ table 70162 "Mandate Line"
             Error('You cannot delete this line because it is Short Closed.');
     end;
 
+    procedure CalculateCommittedBusiness()
+    var
+        MandateLine: Record "Mandate Line";
+        MandateHr: Record "Mandate Header";
+        NotToAmount: Decimal;
+    begin
+        NotToAmount := 0;
 
+        MandateLine.Reset();
+        MandateLine.SetRange("Mandate Document No.", MandateHr."No.");
+        MandateLine.SetRange("Not Due", true);
+
+        if MandateLine.FindSet() then
+            repeat
+                NotToAmount += MandateLine.Amount;
+            until MandateLine.Next() = 0;
+
+        MandateHr."Committed Business" := MandateHr."Total EL Amt" - NotToAmount;
+    end;
+
+   
 }
+
+
+
+

@@ -307,7 +307,19 @@ page 70163 "Mandate Subform"
                     //  Editable = IsQuantityEditable and (Rec.Invoiced = false);
                     // Editable = Rec.Invoiced = false AND LineEditable;
                     //  Editable = issubfromeditable and (Rec.Invoiced = false);
+                    Caption = 'Not to be billed';
                     ToolTip = 'Specifies the value of the IDNB field.';
+                    trigger OnValidate()
+                    var
+                        MandateHdr: Record "Mandate Header";
+                    begin
+                        if MandateHdr.Get(Rec."Mandate Document No.") then begin
+                            MandateHdr.CalculateCommittedBusiness();
+                            MandateHdr.Modify();
+                            CurrPage.Update(true);
+
+                        end;
+                    end;
 
                 }
                 field("Due Date"; Rec."Due Date")
@@ -431,9 +443,19 @@ page 70163 "Mandate Subform"
     end;
 
     trigger OnAfterGetCurrRecord()
+    var
+        ML: Record "Mandate Line";
     begin
 
+        ML.Reset();
+        ML.SetRange("Amount Assigned", Rec."Amount Assigned");
 
+        if ML.Findset() then begin
+            repeat
+                ML."Actual End Date" := Today;
+                ML.Modify(true);
+            until ML.Next() = 0;
+        end;
         //seteditability();
         rec."Remaining Amount" := abs(rec."Amount Assigned" - rec.Amount);
 
@@ -447,7 +469,20 @@ page 70163 "Mandate Subform"
 
 
     trigger OnAfterGetRecord()
+    var
+        ML: Record "Mandate Line";
     begin
+
+
+        // ML.Reset();
+        // ML.SetRange("Amount Assigned", Rec."Amount Assigned");
+
+        // if ML.Findset() then begin
+        //     repeat
+        //         ML."Actual End Date" := Today;
+        //         ML.Modify(true);
+        //     until ML.Next() = 0;
+        // end;
         SetEditableVariables();//tejasvi
 
 

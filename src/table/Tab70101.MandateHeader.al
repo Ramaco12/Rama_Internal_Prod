@@ -261,6 +261,10 @@ table 70101 "Mandate Header"
         {
             DataClassification = ToBeClassified;
         }
+        field(70147; "Committed Business"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {
@@ -287,5 +291,24 @@ table 70101 "Mandate Header"
         end;
         "User Id" := UserId;
         //"Login User ID" := Database.UserId;
+    end;
+
+    procedure CalculateCommittedBusiness()
+    var
+        MandateLine: Record "Mandate Line";
+        NotToAmount: Decimal;
+    begin
+        NotToAmount := 0;
+
+        MandateLine.Reset();
+        MandateLine.SetRange("Mandate Document No.", Rec."No.");
+        MandateLine.SetRange("Not Due", true);
+
+        if MandateLine.FindSet() then
+            repeat
+                NotToAmount += MandateLine.Amount;
+            until MandateLine.Next() = 0;
+
+        Rec."Committed Business" := Rec."Total EL Amt" - NotToAmount;
     end;
 }

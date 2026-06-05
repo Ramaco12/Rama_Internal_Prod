@@ -186,6 +186,10 @@ page 70161 "Mandate E/L Card"
                         end;
                     end;
                 }
+                field("Committed Business"; Rec."Committed Business")
+                {
+                    ApplicationArea = all;
+                }
                 field("TAX Type"; Rec."TAX Type")
                 {
                     ApplicationArea = All;
@@ -447,8 +451,8 @@ page 70161 "Mandate E/L Card"
                             SPAttachment: Record "SharePoint Attachment";
                         begin
 
-                            if rec.Status<>rec.Status::"Pending Approval" then
-                            Error('Please Send Approval Request first');//Tejswi22052026
+                            if rec.Status <> rec.Status::"Pending Approval" then
+                                Error('Please Send Approval Request first');//Tejswi22052026
 
 
                             SPAttachment.Reset();
@@ -598,7 +602,7 @@ page 70161 "Mandate E/L Card"
         ///Rk 240124
 
 
-        if (RecMHdr1.Status = RecMHdr1.Status::"Pending Approval" ) or (RecMHdr1.Status=RecMHdr1.Status::Released)then
+        if (RecMHdr1.Status = RecMHdr1.Status::"Pending Approval") or (RecMHdr1.Status = RecMHdr1.Status::Released) then
             EditableStatus := false
         else
             EditableStatus := true;
@@ -620,11 +624,11 @@ page 70161 "Mandate E/L Card"
         // //Temp logic //29/01/2024
 
 
-        if (Rec.Status = Rec.Status::"Pending Approval") or (rec.Status= rec.Status::Released) then
+        if (Rec.Status = Rec.Status::"Pending Approval") or (rec.Status = rec.Status::Released) then
             EditableStatus := false
         else
             EditableStatus := true;
-       
+
 
         UserSetup.Reset();
         UserSetup.SetRange("User ID", UserId);
